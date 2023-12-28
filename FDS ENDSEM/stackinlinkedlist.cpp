@@ -1,10 +1,8 @@
 #include <iostream>
-
-class Node {
-public:
+using namespace std;
+struct Node {
     int data;
     Node* next;
-
     Node(int data) : data(data), next(nullptr) {}
 };
 
@@ -38,7 +36,7 @@ public:
 
     int peek() {
         if (isEmpty()) {
-            throw std::runtime_error("Stack is empty");
+            throw runtime_error("Stack is empty");
         }
         return top->data;
     }

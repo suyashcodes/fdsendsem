@@ -12,7 +12,7 @@ struct Node {
 void displayList(Node* head) {
     Node* current = head;
     while (current != nullptr) {
-        std::cout << current->data << " ";
+        cout << current->data << " ";
         current = current->next;
     }
     std::cout << std::endl;
